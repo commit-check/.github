@@ -1,2 +1,0 @@
-# .github
-Org-wide settings
