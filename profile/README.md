@@ -4,9 +4,7 @@
 
 Including commit message formatting, branch nanming, referencing Jira tickets, and more.
 
-Wonder how to get started? check out:
-
-* [commit-check](https://github.com/commit-check/commit-check)
+Wonder how to get started? check out: [commit-check](https://github.com/commit-check/commit-check)
 
 ## Contributing 💪
 
