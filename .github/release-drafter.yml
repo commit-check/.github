@@ -53,6 +53,8 @@ exclude-labels:
   - invalid
 
 change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
+footer: **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION 
+
 # https://github.com/release-drafter/release-drafter?tab=readme-ov-file#version-resolver
 version-resolver:
   major:
