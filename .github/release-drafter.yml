@@ -77,6 +77,7 @@ autolabeler:
   - label: 'documentation'
     files:
       - '*.md'
+      - '*.rst'
     branch:
       - '/docs{0,1}\/.+/'
   - label: 'bug'
