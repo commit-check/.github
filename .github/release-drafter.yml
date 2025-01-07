@@ -88,3 +88,6 @@ autolabeler:
   - label: 'enhancement'
     branch:
       - '/feature\/.+/'
+  - label: 'dependencies'
+    title:
+      - '.*pre-commit autoupdate'
