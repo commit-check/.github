@@ -90,4 +90,4 @@ autolabeler:
       - '/feature\/.+/'
   - label: 'dependencies'
     title:
-      - '/^ci: pre-commit.*'
+      - '/^ci:/i'
