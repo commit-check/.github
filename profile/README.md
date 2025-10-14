@@ -1,6 +1,6 @@
 # Commit Check
 
-[![Website](https://img.shields.io/static/v1?label=Website&message=commit-check.github.io&color=009485&logo=git&logoColor=white)](https://commit-check.github.io)
+[![Website](https://img.shields.io/static/v1?label=Website&message=commit-check.github.io&color=2c9ccd&logo=git&logoColor=white)](https://commit-check.github.io)
 
 **Commit Check** is a free, powerful tool that enforces commit metadata standards, including commit message, branch naming, committer name/email, and commit signoff. Fully customizable with error messages and suggested commands, it ensures compliance across teams.
 
