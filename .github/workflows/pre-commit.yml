@@ -2,19 +2,25 @@ name: Run pre-commit
 
 on:
   workflow_call:
-     inputs:
+    inputs:
       commands:
         required: false
         type: string
         default: ""
         description: run additional commands for preparing the environment
 
+concurrency:
+  group: pre-commit-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         id: python-setup
         with:
           python-version: '3.x'
@@ -22,7 +28,7 @@ jobs:
         if: inputs.commands
         run: ${{ inputs.commands }}
       - name: Cache pre-commit environments
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: '~/.cache/pre-commit'
           key: pre-commit-${{ steps.python-setup.outputs.python-version }}-${{ hashFiles('.pre-commit-config.yaml') }}

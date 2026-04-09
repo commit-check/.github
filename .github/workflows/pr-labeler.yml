@@ -3,6 +3,10 @@ name: PR Labeler
 on:
   workflow_call:
 
+concurrency:
+  group: pr-labeler-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   label_pr:
     permissions:
@@ -16,4 +20,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          config-name: github:commit-check/.github:/.github/release-drafter.yml
+          config-name: github:commit-check/.github:.github/release-drafter.yml
