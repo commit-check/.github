@@ -16,6 +16,7 @@ As a lightweight alternative to GitHub Enterprise [Metadata restrictions](https:
 
 * [commit-check](https://github.com/commit-check/commit-check) running as CLI or pre-commit hook.
 * [commit-check-action](https://github.com/commit-check/commit-check-action) running as GitHub Action.
+* [commit-check-mcp](https://github.com/commit-check/commit-check-mcp) running as MCP server.
 
 ## Contributing 💪
 
