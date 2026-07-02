@@ -39,7 +39,7 @@ We encourage responsible disclosure. **Please do not report security vulnerabili
 
 ### Private Disclosure (Recommended)
 
-1. **Email** — Send details to **[security@commit-check.dev](mailto:security@commit-check.dev)**
+1. **Email** — Send details to **[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)**
 2. **Encryption** — If the issue is sensitive, please encrypt your report using our PGP key (see below).
 3. **Response** — You will receive an acknowledgment within **48 hours**, followed by a detailed assessment and remediation timeline.
 
@@ -78,7 +78,7 @@ Fingerprint:  [TBD]
 ```
 
 > **Note:** A dedicated security PGP key is being provisioned. In the interim,
-> plain-text email to [security@commit-check.dev](mailto:security@commit-check.dev) is preferred.
+> plain-text email to [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com) is preferred.
 
 ## Security Practices
 
