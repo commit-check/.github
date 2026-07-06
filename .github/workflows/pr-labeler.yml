@@ -12,6 +12,8 @@ jobs:
     permissions:
       # write permission is required for autolabeler
       pull-requests: write
+      # labels on pull requests are handled through the Issues labels API
+      issues: write
       contents: read
     runs-on: ubuntu-latest
     steps:
