@@ -1,0 +1,19 @@
+SECURITY.md
+  s_7e6da97f1d8608::t_b909f398140ae8 3-16,20-34,38,40,42-47,49-84,86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "e57d281eb3490536ddd1f94f4fcaf1d2c8ee0619",
+  "prompts": {},
+  "sessions": {
+    "s_7e6da97f1d8608": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f481b-7dd6-7eed-9ace-2e0c437d02ee",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
