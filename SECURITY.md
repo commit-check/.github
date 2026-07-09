@@ -1,21 +1,16 @@
 # Security Policy
 
-If you find a security vulnerability in any Commit Check project, please report it privately.
-
 ## Reporting a Vulnerability
 
-**Do not open a public GitHub issue.** Instead, send an email to:
+If you discover a security vulnerability, please **do not** open a public
+issue. Instead, report it privately via
+[GitHub's private vulnerability reporting](https://github.com/commit-check/REPO/security/advisories/new)
+on the affected repository (replace `REPO` with the actual repository name:
+`commit-check`, `commit-check-action`, `commit-check-mcp`).
 
-**[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)**
-
-Please include:
-
-- Which project and version is affected
-- A description of the issue and its impact
-- Steps to reproduce (or a proof of concept)
-
-You will receive an acknowledgment within 48 hours, followed by a plan for resolution.
+We'll respond as quickly as possible and keep you updated throughout the
+process.
 
 ## Supported Versions
 
-Only the latest release of each project receives security patches. Please keep your dependencies up to date.
+Only the latest release of each project receives security patches.
