@@ -1,0 +1,19 @@
+SECURITY.md
+  s_7e6da97f1d8608::t_b1acb05ef27500 5-9,11-12,16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2d8fd2b943177fde6e9fd929fb3e7ce5bc27f7ef",
+  "prompts": {},
+  "sessions": {
+    "s_7e6da97f1d8608": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f481b-7dd6-7eed-9ace-2e0c437d02ee",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": null
+    }
+  }
+}
