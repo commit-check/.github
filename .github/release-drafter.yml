@@ -1,5 +1,3 @@
-# Shared Release Drafter config for open-delivery-spec org
-# Referenced by repos via: config-name: open-delivery-spec/.github:release-drafter-config.yml
 # https://github.com/release-drafter/release-drafter
 
 name-template: 'v$RESOLVED_VERSION'
@@ -126,5 +124,4 @@ autolabeler:
       - 'test/**'
       - 'tests/**'
       - '__tests__/**'
-      - '*_test.go'
       - '*.test.*'
