@@ -21,3 +21,6 @@ As a lightweight alternative to GitHub Enterprise [Metadata restrictions](https:
 ## Contributing 💪
 
 We welcome feedback, bug reports, and feature requests from the community. Join us in making Commit Check better!
+
+* [Issues](https://github.com/commit-check/commit-check/issues) — bug reports, feature requests
+* [Discussions](https://github.com/commit-check/commit-check/discussions) — questions, ideas, community conversations
