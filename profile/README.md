@@ -43,7 +43,7 @@ built for a modern DevOps and Infrastructure-as-Code workflow.
 | [**commit-check**](https://github.com/commit-check/commit-check) | Python CLI & pre-commit hook | Local checks, CI pipelines, scripting |
 | [**commit-check-action**](https://github.com/commit-check/commit-check-action) | GitHub Action | PR & push validation, job summaries, PR comments |
 | [**commit-check-mcp**](https://github.com/commit-check/commit-check-mcp) | Model Context Protocol server | Letting AI agents validate against your rules |
-| **commit-check-app** | GitHub App | Zero-config, org-wide checks *(coming soon)* |
+<!-- | **commit-check-app** | GitHub App | Zero-config, org-wide checks *(coming soon)* | -->
 
 ## Key features
 
