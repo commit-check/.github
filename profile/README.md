@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/logo-small.jpg" alt="Commit Check" width="300">
+<img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/logo-small.jpg" alt="Commit Check" width="200">
 
 # Commit Check
 
