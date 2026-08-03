@@ -1,0 +1,19 @@
+.github/dependabot.yml
+  s_853821c48bc770::t_6fd458abbca703 13-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "92dfd91857dace3f84466d544c68a68a02fa2341",
+  "prompts": {},
+  "sessions": {
+    "s_853821c48bc770": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fbdc6-6a5c-7843-910a-fb19c3943ee8",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
