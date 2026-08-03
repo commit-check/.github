@@ -14,7 +14,7 @@ one policy, across your CLI, pre-commit, CI, and AI agents.
 [![Marketplace](https://img.shields.io/badge/Marketplace-commit--check--action-2c9ccd?logo=githubactions&logoColor=white)](https://github.com/marketplace/actions/commit-check-action)
 [![SLSA 3](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2c9ccd.svg)](https://opensource.org/licenses/MIT)
-[![Website](https://img.shields.io/badge/Docs-commit--check.github.io-2c9ccd?logo=git&logoColor=white)](https://commit-check.github.io)
+[![Website](https://img.shields.io/badge/Website-commit--check.com-2c9ccd?logo=git&logoColor=white)](https://commit-check.com)
 
 </div>
 
@@ -67,4 +67,4 @@ We welcome feedback, bug reports, and feature requests from the community.
 
 - [Issues](https://github.com/commit-check/commit-check/issues) — bug reports & feature requests
 - [Discussions](https://github.com/commit-check/commit-check/discussions) — questions, ideas, and community conversations
-- [Documentation](https://commit-check.github.io) — guides, configuration reference, and more
+- [Documentation](https://docs.commit-check.com) — guides, configuration reference, and more
