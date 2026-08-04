@@ -1,3 +1,4 @@
+# Learn more: https://commit-check.com
 # ============================================================================
 # commit-check — org-level base configuration
 #
@@ -7,7 +8,7 @@
 #   inherit_from = "github:commit-check/.github:commit-check.toml"
 #
 # Local settings override the inherited values (shallow merge per section).
-# See https://github.com/commit-check/commit-check for full documentation.
+# See https://commit-check.com for full documentation.
 # ============================================================================
 
 [commit]
