@@ -30,5 +30,10 @@ ignore_authors = ["dependabot[bot]", "copilot[bot]", "pre-commit-ci[bot]", "code
 [branch]
 # https://conventionalbranch.org
 conventional_branch = true
-allow_branch_types = ["feature", "bugfix", "hotfix", "release", "chore", "feat", "fix", "ai", "claude", "codex", "copilot", "cursor"]
+# allow_branch_types is deliberately unset. commit-check's own default is a
+# superset of the Conventional Branch spec and already carries the bot
+# prefixes (dependabot/, renovate/) alongside the AI agent ones. Restating the
+# list here froze it: both bot prefixes had dropped out, so Renovate branches
+# failed a check they cannot satisfy, and every type added upstream since was
+# invisible to this organisation.
 ignore_authors = ["dependabot[bot]", "copilot[bot]", "pre-commit-ci[bot]", "shenxianpeng"]
