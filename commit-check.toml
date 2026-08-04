@@ -18,7 +18,10 @@ subject_capitalized = false
 subject_imperative = true
 subject_max_length = 100
 subject_min_length = 5
-allow_commit_types = ["feat", "fix", "docs", "style", "refactor", "test", "chore", "ci"]
+# Keep this list in sync with the core default — restating it freezes the
+# allowed set (same trap as allow_branch_types below). Core default:
+# feat, fix, docs, style, refactor, test, chore, perf, build, ci
+allow_commit_types = ["feat", "fix", "docs", "style", "refactor", "test", "chore", "perf", "build", "ci"]
 allow_merge_commits = true
 allow_revert_commits = true
 allow_empty_commits = false
