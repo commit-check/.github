@@ -1,0 +1,19 @@
+commit-check.toml
+  s_0fd680379e957f::t_b2a5c2e7b00cfe 20-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9996a5c895514dc64c9c48caa032b46643743ace",
+  "prompts": {},
+  "sessions": {
+    "s_0fd680379e957f": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fcef3-0f91-7b85-b544-eebb2db1147a",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
