@@ -1,0 +1,20 @@
+commit-check.toml
+  s_0fd680379e957f::t_ac1329e28a7cec 1-2
+  s_0fd680379e957f::t_00095c82122c59 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5825c2bf9aaac4fcc618db73cbf2e3547cc083a0",
+  "prompts": {},
+  "sessions": {
+    "s_0fd680379e957f": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fcef3-0f91-7b85-b544-eebb2db1147a",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": null
+    }
+  }
+}
