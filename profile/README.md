@@ -67,4 +67,4 @@ We welcome feedback, bug reports, and feature requests from the community.
 
 - [Issues](https://github.com/commit-check/commit-check/issues) — bug reports & feature requests
 - [Discussions](https://github.com/commit-check/commit-check/discussions) — questions, ideas, and community conversations
-- [Documentation](https://docs.commit-check.com) — guides, configuration reference, and more
+- [Documentation](https://commit-check.com) — guides, configuration reference, and more
