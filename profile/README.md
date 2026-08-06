@@ -1,10 +1,11 @@
 <div align="center">
 
-<!-- <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/logo-small.jpg" alt="Commit Check" width="200"> -->
-
-# Commit Check
-
-**Clean commits. Clear standards.**
+<!-- PNG rather than SVG: GitHub proxies README images through camo, which
+     handles SVG unreliably. The .svg files alongside these are the source. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-dark.png">
+  <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-light.png" alt="Commit Check — Clean commits. Clear standards.">
+</picture>
 
 Enforce commit message, branch naming, author, and signoff standards —
 one policy, across your CLI, pre-commit, CI, and AI agents.
