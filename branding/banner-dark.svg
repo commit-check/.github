@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <rect width="1280" height="320" fill="#0d1117"/>
+  <rect x="80" y="112" width="96" height="96" rx="22" fill="#2c9ccd"/><polyline points="105,161 122,178 153,143" fill="none" stroke="#ffffff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="208" y="178" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="54" font-weight="bold"
+        letter-spacing="-1.2" fill="#e6edf3">Commit Check</text>
+  <text x="208" y="218" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="21"
+        letter-spacing="0.2" fill="#8b949e">Clean commits. Clear standards.</text>
+  <rect x="760" y="76" width="440" height="168" rx="14" fill="#161b22" stroke="#30363d"/>
+  <text x="792" y="106" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="bold"
+        letter-spacing="1.1" fill="#8b949e">ALL CHECKS PASSED</text>
+  <text x="792" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#3fb950">&#10004;</text><text x="820" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#e6edf3">message</text><text x="964" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#8b949e">feat: add pagination</text>
+<text x="792" y="166" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#3fb950">&#10004;</text><text x="820" y="166" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#e6edf3">branch</text><text x="964" y="166" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#8b949e">feat/pagination</text>
+<text x="792" y="200" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#3fb950">&#10004;</text><text x="820" y="200" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#e6edf3">author-email</text><text x="964" y="200" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#8b949e">dev@example.com</text>
+</svg>
