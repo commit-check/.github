@@ -1,0 +1,20 @@
+branding/README.md
+  s_0024ab8b426965::t_d2f989e281eef8 13,22-27
+  s_0024ab8b426965::t_1539e60a1c575d 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e672bd8b125a25bddbc8f5d7421a0ec07fba60d9",
+  "prompts": {},
+  "sessions": {
+    "s_0024ab8b426965": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fe336-3bac-78b5-b0bb-d2c69841e255",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
