@@ -10,7 +10,7 @@ legible where they cross the check.
 | `avatar.png` | The org avatar. White swoosh on brand blue, 1024x1024, wordless. |
 | `logo.png` / `logo-dark.png` | The full lockup for light / dark backgrounds (keyline colour differs). |
 | `logo-mark.png` | The swoosh alone, transparent, brand blue. |
-| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. |
+| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Rasterized at 2× (2560×640) so they stay sharp on retina displays. |
 | `favicon.svg` | Favicon / small tile. |
 | `social-preview.png` | GitHub social preview (1280x640). |
 | `*.svg` | Source of truth. The wordmark uses Montserrat SemiBold; PNGs here are the reference renders. |
@@ -18,6 +18,13 @@ legible where they cross the check.
 Reference the **PNGs** in READMEs, not the SVGs: GitHub proxies README images
 through camo, which handles SVG unreliably — and the SVG text needs Montserrat
 installed to render correctly.
+
+To re-render the banners (needs Montserrat SemiBold installed):
+
+```bash
+rsvg-convert -w 2560 -h 640 -o banner-light.png banner-light.svg
+rsvg-convert -w 2560 -h 640 -o banner-dark.png banner-dark.svg
+```
 
 ## Legacy files
 
