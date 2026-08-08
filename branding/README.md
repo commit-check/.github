@@ -1,25 +1,27 @@
-# Branding
+# Branding v3a
 
-Brand colour: **`#2c9ccd`**. The mark is a single check, stroked with round
-caps and optically centred — a check is bottom-heavy, so it sits slightly high
-in its box.
+Vector remaster of the original swoosh-check logo. Same composition, same
+brand blue **#2c9ccd** — but clean curves that stay sharp at any resolution.
+The COMMIT wordmark carries a background-coloured keyline so the letters stay
+legible where they cross the check.
 
 | File | Use it for |
 | --- | --- |
-| `avatar.png` | The org avatar. White check on brand blue, 1024×1024. |
-| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>` so the banner follows the reader's theme. |
-| `logo-mark.png` | The mark alone, transparent, where a background already exists. |
-| `*.svg` | Source of truth. Edit these, then re-render the PNGs. |
+| `avatar.png` | The org avatar. White swoosh on brand blue, 1024x1024, wordless. |
+| `logo.png` / `logo-dark.png` | The full lockup for light / dark backgrounds (keyline colour differs). |
+| `logo-mark.png` | The swoosh alone, transparent, brand blue. |
+| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. |
+| `favicon.svg` | Favicon / small tile. |
+| `social-preview.png` | GitHub social preview (1280x640). |
+| `*.svg` | Source of truth. The wordmark uses Montserrat SemiBold; PNGs here are the reference renders. |
 
-Reference the **PNGs**, not the SVGs: GitHub proxies README images through
-camo, which handles SVG unreliably.
-
-The avatar is deliberately wordless. GitHub shows org avatars at around 40px
-in most places, and at that size a wordmark is an unreadable smudge.
+Reference the **PNGs** in READMEs, not the SVGs: GitHub proxies README images
+through camo, which handles SVG unreliably — and the SVG text needs Montserrat
+installed to render correctly.
 
 ## Legacy files
 
-`logo.jpg` and `logo-small.jpg` predate these and are kept only because
+`logo.jpg` and `logo-small.jpg` predate this set and are kept only because
 something outside this repository may still link to them. Neither is fit for
 new use: `logo.jpg` is a PNG wearing a `.jpg` extension, and `logo-small.jpg`
 is a real JPEG, so it has no transparency and renders as a white box on any
