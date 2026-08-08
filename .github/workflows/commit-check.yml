@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0  # Required for merge-base checks
-      - uses: commit-check/commit-check-action@v2.11.1
+      - uses: commit-check/commit-check-action@562a184b2b8e583e757b17eb385bc48370f44547 # v2.13.1
         with:
           message: true
           branch: true
