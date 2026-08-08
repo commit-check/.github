@@ -13,10 +13,9 @@ one policy, across your CLI, pre-commit, CI, and AI agents.
 [![PyPI](https://img.shields.io/pypi/v/commit-check?logo=pypi&logoColor=white&color=2c9ccd)](https://pypi.org/project/commit-check/)
 [![Downloads](https://img.shields.io/pypi/dm/commit-check?color=2c9ccd)](https://pypi.org/project/commit-check/)
 [![Marketplace](https://img.shields.io/badge/Marketplace-commit--check--action-2c9ccd?logo=githubactions&logoColor=white)](https://github.com/marketplace/actions/commit-check-action)
-[![SLSA 3](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2c9ccd.svg)](https://opensource.org/licenses/MIT)
 [![Website](https://img.shields.io/badge/Website-commit--check.com-2c9ccd?logo=git&logoColor=white)](https://commit-check.com)
-
+<!-- [![SLSA 3](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev) -->
 </div>
 
 ---
