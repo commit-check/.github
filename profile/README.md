@@ -85,7 +85,7 @@ Every rule and option is at **[commit-check.com](https://commit-check.com)**.
 | [**commit-check**](https://github.com/commit-check/commit-check) | Python CLI & pre-commit hook | Local checks, CI pipelines, scripting |
 | [**commit-check-action**](https://github.com/commit-check/commit-check-action) | GitHub Action | PR & push validation, job summaries, PR comments |
 | [**commit-check-mcp**](https://github.com/commit-check/commit-check-mcp) | Model Context Protocol server | Letting AI agents validate against your rules |
-<!-- | **commit-check-app** | GitHub App | Zero-config, org-wide checks *(coming soon)* | -->
+| [**Commit Check App**](https://github.com/marketplace/commit-check) | GitHub App | Org-wide checks with no workflow file, on every push and pull request |
 
 ## What it does not do
 
