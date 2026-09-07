@@ -4,10 +4,10 @@
      handles SVG unreliably. The .svg files alongside these are the source. -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-dark.png">
-  <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-light.png" alt="Commit Check — Clean commits. Clear standards.">
+  <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-light.png" alt="Commit Check">
 </picture>
 
-An open policy engine for Git commit metadata — one versioned file, enforced everywhere.
+One config file. Every place your team commits.
 
 [![PyPI](https://img.shields.io/pypi/v/commit-check?logo=pypi&logoColor=white&color=2c9ccd)](https://pypi.org/project/commit-check/)
 [![Downloads](https://img.shields.io/pypi/dm/commit-check?color=2c9ccd)](https://pypi.org/project/commit-check/)

@@ -2,7 +2,6 @@
   <rect width="1280" height="320" fill="#0d1117"></rect>
   <g transform="translate(60 20) scale(0.85)"><path d="M22 142 C56 146 86 168 106 204 C130 148 190 84 262 38 C272 32 282 27 289 26 C298 25 302 32 296 40 C240 88 186 156 148 236 C141 253 134 268 127 280 C121 292 108 292 102 280 C86 246 60 204 30 172 C20 162 14 148 22 142 Z" fill="#2c9ccd"></path>
   <text x="65" y="141" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="46" font-weight="600" letter-spacing="4" fill="#2c9ccd" stroke="#0d1117" stroke-width="9" paint-order="stroke" stroke-linejoin="round">COMMIT</text></g>
-  <text x="360" y="170" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" letter-spacing="0.2" fill="#8b949e">Clean commits. Clear standards.</text>
   <rect x="760" y="76" width="440" height="168" rx="14" fill="#161b22" stroke="#30363d"></rect>
   <text x="792" y="106" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1.1" fill="#8b949e">ALL CHECKS PASSED</text>
   <text x="792" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#3fb950">✔</text><text x="820" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#e6edf3">message</text><text x="984" y="132" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#8b949e">feat: add pagination</text>
