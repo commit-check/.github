@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
   <rect width="1280" height="640" fill="#123847"></rect>
-  <g transform="translate(140 100) scale(1.4)"><path d="M22 142 C56 146 86 168 106 204 C130 148 190 84 262 38 C272 32 282 27 289 26 C298 25 302 32 296 40 C240 88 186 156 148 236 C141 253 134 268 127 280 C121 292 108 292 102 280 C86 246 60 204 30 172 C20 162 14 148 22 142 Z" fill="#2c9ccd"></path>
+  <g transform="translate(419 52) scale(1.4)"><path d="M22 142 C56 146 86 168 106 204 C130 148 190 84 262 38 C272 32 282 27 289 26 C298 25 302 32 296 40 C240 88 186 156 148 236 C141 253 134 268 127 280 C121 292 108 292 102 280 C86 246 60 204 30 172 C20 162 14 148 22 142 Z" fill="#2c9ccd"></path>
   <text x="65" y="141" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="46" font-weight="600" letter-spacing="4" fill="#2c9ccd" stroke="#123847" stroke-width="9" paint-order="stroke" stroke-linejoin="round">COMMIT</text></g>
-  <text x="680" y="280" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="46" font-weight="bold" fill="#ffffff">Clean commits.</text>
-  <text x="680" y="342" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="46" font-weight="bold" fill="#7cc4e0">Clear standards.</text>
-  <rect x="680" y="376" width="296" height="52" rx="26" fill="#2c9ccd"></rect>
-  <text x="708" y="410" font-family="DejaVu Sans Mono, monospace" font-size="25" font-weight="bold" fill="#ffffff">commit-check.com</text>
+  <rect x="492" y="500" width="296" height="52" rx="26" fill="#2c9ccd"></rect>
+  <text x="520" y="534" font-family="DejaVu Sans Mono, monospace" font-size="25" font-weight="bold" fill="#ffffff">commit-check.com</text>
 </svg>

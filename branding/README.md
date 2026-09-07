@@ -10,10 +10,17 @@ legible where they cross the check.
 | `avatar.png` | The org avatar. White swoosh on brand blue, 1024x1024, wordless. |
 | `logo.png` / `logo-dark.png` | The full lockup for light / dark backgrounds (keyline colour differs). |
 | `logo-mark.png` | The swoosh alone, transparent, brand blue. |
-| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Rasterized at 2× (2560×640) so they stay sharp on retina displays. |
+| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Lockup on the left, a sample check run on the right, no tagline. Rasterized at 2× (2560×640) so they stay sharp on retina displays. |
 | `favicon.svg` | Favicon / small tile. |
-| `social-preview.png` | GitHub social preview (1280x640). |
+| `social-preview.png` | GitHub social preview (1280x640). Centred lockup over the domain, no tagline. Upload it per repository under Settings → Social preview; nothing does that for you. |
 | `*.svg` | Source of truth. The wordmark uses Montserrat SemiBold; PNGs here are the reference renders. |
+
+None of these carry a tagline, and new ones should not either. A slogan baked
+into a PNG cannot be reviewed in a diff, cannot be corrected without a machine
+that has Montserrat installed, and goes stale silently — these read
+"Clean commits. Clear standards." for a while after the rest of the org had
+stopped saying it. The wordmark and the domain do not expire; the sentence belongs in the
+prose next to the image, where changing it is a one-line diff.
 
 Reference the **PNGs** in READMEs, not the SVGs: GitHub proxies README images
 through camo, which handles SVG unreliably — and the SVG text needs Montserrat
@@ -24,7 +31,13 @@ To re-render the banners (needs Montserrat SemiBold installed):
 ```bash
 rsvg-convert -w 2560 -h 640 -o banner-light.png banner-light.svg
 rsvg-convert -w 2560 -h 640 -o banner-dark.png banner-dark.svg
+rsvg-convert -w 1280 -h 640 -o social-preview.png social-preview.svg
 ```
+
+Different librsvg versions antialias glyph edges slightly differently, so a
+re-render is a whole-image change even when you edited one line. To see what
+you actually changed, render the file before and after with the *same* binary
+and diff those two.
 
 ## Legacy files
 
