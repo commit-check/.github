@@ -10,10 +10,16 @@ legible where they cross the check.
 | `avatar.png` | The org avatar. White swoosh on brand blue, 1024x1024, wordless. |
 | `logo.png` / `logo-dark.png` | The full lockup for light / dark backgrounds (keyline colour differs). |
 | `logo-mark.png` | The swoosh alone, transparent, brand blue. |
-| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Lockup on the left, a sample check run on the right, no tagline. Rasterized at 2× (2560×640) so they stay sharp on retina displays. |
+| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Lockup on the left, a sample check run on the right, no tagline. Rasterized at 2× (2000×640) so they stay sharp on retina displays. |
 | `favicon.svg` | Favicon / small tile. |
-| `social-preview.png` | GitHub social preview (1280x640). Centred lockup over the domain, no tagline. Upload it per repository under Settings → Social preview; nothing does that for you. |
+| `social-preview.png` | GitHub social preview (1280x640). Same two-column composition as the banner, with the domain under the lockup. Upload it per repository under Settings → Social preview; nothing does that for you. |
 | `*.svg` | Source of truth. The wordmark uses Montserrat SemiBold; PNGs here are the reference renders. |
+
+The banner is 1000×320 rather than the 1280×320 it used to be. Taking the
+tagline out left a 443px void between the lockup and the check-run panel —
+six times the outer margins — so the canvas was narrowed to the content
+instead of padding the middle. Keep that in mind before adding anything
+back: the layout is sized to what is in it.
 
 None of these carry a tagline, and new ones should not either. A slogan baked
 into a PNG cannot be reviewed in a diff, cannot be corrected without a machine
@@ -29,8 +35,8 @@ installed to render correctly.
 To re-render the banners (needs Montserrat SemiBold installed):
 
 ```bash
-rsvg-convert -w 2560 -h 640 -o banner-light.png banner-light.svg
-rsvg-convert -w 2560 -h 640 -o banner-dark.png banner-dark.svg
+rsvg-convert -w 2000 -h 640 -o banner-light.png banner-light.svg
+rsvg-convert -w 2000 -h 640 -o banner-dark.png banner-dark.svg
 rsvg-convert -w 1280 -h 640 -o social-preview.png social-preview.svg
 ```
 
