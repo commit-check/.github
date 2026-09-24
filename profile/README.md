@@ -1,19 +1,19 @@
 <div align="center">
 
 <!-- PNG rather than SVG: GitHub proxies README images through camo, which
-     handles SVG unreliably. The .svg files alongside these are the source. -->
+     handles SVG unreliably. The sources are in branding/src/. -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-dark.png">
   <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-light.png" alt="Commit Check">
 </picture>
 
-One config file. Every place your team commits.
+Catch bad commits before they merge — one config file, from your commit hook to every pull request.
 
-[![PyPI](https://img.shields.io/pypi/v/commit-check?logo=pypi&logoColor=white&color=2c9ccd)](https://pypi.org/project/commit-check/)
-[![Downloads](https://img.shields.io/pepy/dt/commit-check?color=2c9ccd)](https://pepy.tech/projects/commit-check)
-[![Marketplace](https://img.shields.io/badge/Marketplace-commit--check--action-2c9ccd?logo=githubactions&logoColor=white)](https://github.com/marketplace/actions/commit-check-action)
-[![License: MIT](https://img.shields.io/badge/License-MIT-2c9ccd.svg)](https://opensource.org/licenses/MIT)
-[![Website](https://img.shields.io/badge/Website-commit--check.com-2c9ccd?logo=git&logoColor=white)](https://commit-check.com)
+[![PyPI](https://img.shields.io/pypi/v/commit-check?labelColor=0b1620&logo=pypi&logoColor=white&color=2c9ccd)](https://pypi.org/project/commit-check/)
+[![Downloads](https://img.shields.io/pepy/dt/commit-check?labelColor=0b1620&color=2c9ccd)](https://pepy.tech/projects/commit-check)
+[![Marketplace](https://img.shields.io/badge/Marketplace-commit--check--action-2c9ccd?labelColor=0b1620&logo=githubactions&logoColor=white)](https://github.com/marketplace/actions/commit-check-action)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2c9ccd.svg?labelColor=0b1620)](https://opensource.org/licenses/MIT)
+[![Website](https://img.shields.io/badge/Website-commit--check.com-2c9ccd?labelColor=0b1620&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2bPHBhdGggZD0iTTIxIDM0TDMwIDQzTDQ3IDIyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzlDQ0QiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2bPGNpcmNsZSBjeD0iMjEiIGN5PSIzNCIgcj0iNyIgZmlsbD0iIzBCMTYyMCIgc3Ryb2tlPSIjMkM5Q0NEIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4K)](https://commit-check.com)
 
 </div>
 

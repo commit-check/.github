@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- The lockup. logo.html?theme=light (Ink text) or ?theme=dark (white text).
+     Rendered on a transparent canvas and trimmed by render.sh. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { padding: 40px; }
+  .lockup { gap: 44px; }
+  .wordmark { font-size: 128px; color: var(--ink); }
+  .dark .wordmark { color: #ffffff; }
+</style>
+</head>
+<body>
+<div class="lockup"><i class="mark" data-size="200"></i><span class="wordmark">Commit Check</span></div>
+<script>
+  if (location.search.indexOf("theme=dark") >= 0) {
+    document.body.classList.add("dark");
+    document.querySelector("i.mark").dataset.tile = "#13212C";
+  }
+</script>
+<script src="mark.js"></script>
+</body>
+</html>
