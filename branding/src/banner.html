@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- README banner, 1000x320 CSS px, rendered at 2x. banner.html?theme=light|dark.
+     No tagline, on purpose: see ../README.md. The panel lists real check
+     names as the GitHub Action prints them. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { width: 1000px; height: 320px; }
+  .card {
+    width: 1000px; height: 320px; border-radius: 24px;
+    background: var(--paper); color: var(--ink);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 64px; position: relative; overflow: hidden;
+  }
+  .dark .card { background: var(--ink); color: #ffffff; }
+  .lockup { gap: 20px; }
+  .wordmark { font-size: 48px; }
+  .panel {
+    width: 400px; border-radius: 16px; background: var(--ink-3);
+    border: 1px solid var(--ink-line); padding: 22px 26px;
+    font-size: 15px; line-height: 29px; color: var(--on-ink);
+  }
+  .dark .panel { background: var(--ink-2); }
+  .head { font-family: var(--text); font-size: 15px; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+  .head b { color: var(--pass); }
+  .row { display: flex; gap: 14px; white-space: nowrap; }
+  .row .ok { color: var(--pass); }
+  .row .k { width: 122px; }
+  .row .v { color: var(--on-ink-dim); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="lockup"><i class="mark" data-size="80"></i><span class="wordmark">Commit Check</span></div>
+  <div class="panel">
+    <div class="head"><b>✔</b> All 4 checks passed</div>
+    <div class="row mono"><span class="ok">✔</span><span class="k">message</span><span class="v">feat: add login page</span></div>
+    <div class="row mono"><span class="ok">✔</span><span class="k">branch</span><span class="v">feature/add-login</span></div>
+    <div class="row mono"><span class="ok">✔</span><span class="k">author-email</span><span class="v">jane@acme.dev</span></div>
+    <div class="row mono"><span class="ok">✔</span><span class="k">ai-disclosure</span><span class="v">Assisted-by: Claude</span></div>
+  </div>
+</div>
+<script>
+  if (location.search.indexOf("theme=dark") >= 0) {
+    document.body.classList.add("dark");
+    document.querySelector("i.mark").dataset.tile = "#13212C";
+  }
+</script>
+<script src="mark.js"></script>
+</body>
+</html>

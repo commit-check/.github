@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="-14 -9 340 340">
-  <rect x="-14" y="-9" width="340" height="340" fill="#2c9ccd"></rect>
-  <path d="M22 142 C56 146 86 168 106 204 C130 148 190 84 262 38 C272 32 282 27 289 26 C298 25 302 32 296 40 C240 88 186 156 148 236 C141 253 134 268 127 280 C121 292 108 292 102 280 C86 246 60 204 30 172 C20 162 14 148 22 142 Z" fill="#ffffff"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Full-bleed Ink: GitHub crops avatars to a circle or a rounded square,
+       so the tile's own corners would show as a ring. -->
+  <rect width="64" height="64" fill="#0B1620"/>
+  <g transform="translate(9.6 9.6) scale(.7)">
+    <path d="M21 10V54" stroke="#2C9CCD" stroke-opacity=".4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M21 34L30 43L47 22" fill="none" stroke="#2C9CCD" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="21" cy="34" r="6.5" fill="#0B1620" stroke="#2C9CCD" stroke-width="4"/>
+  </g>
 </svg>

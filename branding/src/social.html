@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- GitHub social preview, 1280x640. social.html?repo=<name> picks the panel;
+     no repo gives the org-wide card. The left column is the lockup and an
+     address, never a tagline (see ../README.md). The CLI and MCP panels are
+     real output (commit-check 2.18.0); the Action panel follows its report
+     format; the App's commits are sample data. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  body { width: 1280px; height: 640px; }
+  .card {
+    position: relative; width: 1280px; height: 640px; overflow: hidden;
+    background: var(--ink); color: var(--on-ink);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 88px;
+  }
+  .graph { position: absolute; right: 0; top: 0; }
+  .left { position: relative; display: flex; flex-direction: column; gap: 40px; }
+  .lockup { gap: 24px; }
+  .wordmark { font-size: 64px; color: #ffffff; }
+  .pill {
+    align-self: flex-start; padding: 12px 22px; border-radius: 999px;
+    background: var(--blue); color: #06131b;
+    font-size: 24px; font-weight: 700;
+  }
+  .repo { font-size: 22px; color: var(--on-ink-dim); margin-top: -22px; }
+  .panel {
+    position: relative; width: 520px; border-radius: 18px;
+    background: var(--ink-3); border: 1px solid var(--ink-line);
+    box-shadow: 0 30px 70px rgba(0,0,0,.45);
+    padding: 28px 30px; font-size: 18px; line-height: 32px;
+  }
+  .panel .label { font-family: var(--text); font-size: 15px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-soft); margin-bottom: 10px; }
+  .l { white-space: pre; }
+  .dim { color: var(--on-ink-dim); }
+  .ok { color: var(--pass); }
+  .bad { color: var(--fail); }
+  .b { font-weight: 700; }
+  .blue { color: var(--blue-soft); }
+  .rule { height: 1px; background: var(--ink-line); margin: 12px 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .chips span { font-size: 15px; line-height: 1; padding: 8px 12px; border-radius: 999px; border: 1px solid #2a3b48; color: var(--on-ink); }
+  .chips span:first-child { background: var(--blue); border-color: var(--blue); color: #06131b; }
+  .strike { text-decoration: line-through; text-decoration-color: rgba(255,122,110,.6); }
+  [data-repo] { display: none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <svg class="graph" width="520" height="640" viewBox="0 0 520 640" aria-hidden="true">
+    <g stroke="#2C9CCD" stroke-opacity=".08" stroke-width="2" fill="none"><path d="M120 0V640M220 0V640M320 0V640M420 0V640"/><path d="M220 140C220 200 320 200 320 260M420 380C420 440 320 440 320 500"/></g>
+    <g fill="#0B1620" stroke="#2C9CCD" stroke-opacity=".16" stroke-width="2"><circle cx="120" cy="80" r="7"/><circle cx="220" cy="140" r="7"/><circle cx="320" cy="260" r="7"/><circle cx="420" cy="380" r="7"/><circle cx="320" cy="500" r="7"/><circle cx="120" cy="560" r="7"/></g>
+  </svg>
+
+  <div class="left">
+    <div class="lockup"><i class="mark" data-size="104" data-tile="#13212C"></i><span class="wordmark">Commit Check</span></div>
+    <span class="pill mono">commit-check.com</span>
+    <span class="repo mono" id="repo"></span>
+  </div>
+
+  <!-- Org card and commit-check.com: a message and a branch, rejected then fixed. -->
+  <div class="panel mono" data-repo="">
+    <div class="l bad"><span class="b">✖ </span><span class="strike">Fix: add streaming support</span></div>
+    <div class="l ok"><span class="b">✔ </span>fix: add streaming support</div>
+    <div class="rule"></div>
+    <div class="l bad"><span class="b">✖ </span><span class="strike">my-new-thing</span></div>
+    <div class="l ok"><span class="b">✔ </span>feature/streaming-support</div>
+  </div>
+
+  <!-- commit-check: the CLI. -->
+  <div class="panel mono" data-repo="commit-check">
+    <div class="l dim">$ echo "Fix: add login" | commit-check -m</div>
+    <div class="l"><span class="bad b">CC001</span> message check failed ==&gt;</div>
+    <div class="l">Fix: add login</div>
+    <div class="l"><span class="blue">Suggest:</span> Use "<span class="ok b">fix: add login</span>"</div>
+    <div class="l dim">Docs: commit-check.com/rules/#cc001</div>
+  </div>
+
+  <!-- commit-check-action: the PR comment. -->
+  <div class="panel" data-repo="commit-check-action">
+    <div class="label">Pull request comment</div>
+    <div style="font-size: 28px; font-weight: 700; color: #fff; line-height: 1.3">Commit Check</div>
+    <div style="font-size: 20px; font-weight: 600; margin-top: 8px"><span class="ok">✔</span> All 5 checks passed</div>
+    <div class="chips mono"><span>pr-comments</span><span>job-summary</span><span>pr-title</span><span>message</span><span>branch</span></div>
+  </div>
+
+  <!-- commit-check-app: one check run per commit. -->
+  <div class="panel mono" data-repo="commit-check-app">
+    <div class="label">Commit Check · check runs</div>
+    <div class="l"><span class="ok">✔ </span>d87faca  feat: add login page</div>
+    <div class="l"><span class="ok">✔ </span>1f0c2aa  fix: handle empty password</div>
+    <div class="l"><span class="ok">✔ </span>9b1e4c0  docs: explain the login flow</div>
+    <div class="l dim">3 check runs, all passed</div>
+  </div>
+
+  <!-- commit-check-mcp: a tool call and its real result. -->
+  <div class="panel mono" data-repo="commit-check-mcp">
+    <div class="l blue">validate_commit_message</div>
+    <div class="l dim">{"message": "Fix: add login"}</div>
+    <div class="rule"></div>
+    <div class="l">"status": "<span class="bad">fail</span>",</div>
+    <div class="l">"rule_id": "CC001",</div>
+    <div class="l">"fix": "<span class="ok b">fix: add login</span>"</div>
+  </div>
+</div>
+<script>
+  var repo = new URLSearchParams(location.search).get("repo") || "";
+  var panel = document.querySelector('[data-repo="' + repo + '"]') || document.querySelector('[data-repo=""]');
+  panel.style.display = "block";
+  document.getElementById("repo").textContent = repo && repo !== "commit-check.com" ? "github.com/commit-check/" + repo : "";
+</script>
+<script src="mark.js"></script>
+</body>
+</html>

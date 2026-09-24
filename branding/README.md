@@ -1,54 +1,65 @@
-# Branding v3a
+# Branding v4 — Signal
 
-Vector remaster of the original swoosh-check logo. Same composition, same
-brand blue **#2c9ccd** — but clean curves that stay sharp at any resolution.
-The COMMIT wordmark carries a background-coloured keyline so the letters stay
-legible where they cross the check.
+The mark is a commit on a history line, ticked: the thing Commit Check looks
+at, and the verdict. It replaces the swoosh check of v1–v3. The same set is
+used on [commit-check.com](https://commit-check.com), in the org avatar, the
+README badge and the social previews, so they read as one project.
+
+| Token | Value | Use |
+| --- | --- | --- |
+| Ink | `#0b1620` | Dark grounds, the mark's tile, text on light |
+| Signal Blue | `#2c9ccd` | The mark, accents, buttons (with Ink text). The same blue the badge has always used |
+| Paper | `#f4f6f7` | Light grounds |
+| Display face | Bricolage Grotesque 700–800 | The wordmark and headings |
+| Text face | Instrument Sans | Everything else |
+| Code face | JetBrains Mono, ligatures off | Commands, rule IDs, output |
 
 | File | Use it for |
 | --- | --- |
-| `avatar.png` | The org avatar. White swoosh on brand blue, 1024x1024, wordless. |
-| `logo.png` / `logo-dark.png` | The full lockup for light / dark backgrounds (keyline colour differs). |
-| `logo-mark.png` | The swoosh alone, transparent, brand blue. |
-| `banner-light.png` / `banner-dark.png` | READMEs and docs. Pair them in a `<picture>`. Lockup on the left, a sample check run on the right, no tagline. Rasterized at 2× (2000×640) so they stay sharp on retina displays. |
-| `favicon.svg` | Favicon / small tile. |
-| `social-preview.png` | GitHub social preview (1280x640). Same two-column composition as the banner, with the domain under the lockup. Upload it per repository under Settings → Social preview; nothing does that for you. |
-| `*.svg` | Source of truth. The wordmark uses Montserrat SemiBold; PNGs here are the reference renders. |
+| `avatar.png` | The org avatar, 1024×1024. Full-bleed Ink, because GitHub crops avatars itself. |
+| `logo-mark.png` / `.svg` | The mark on its tile. |
+| `logo.png` / `logo-dark.png` | The lockup for light / dark backgrounds, trimmed. |
+| `banner-light.png` / `banner-dark.png` | READMEs. Pair them in a `<picture>`. Lockup on the left, a passing check run on the right, rendered at 2× (2000×640). |
+| `social-preview.png` | The org-wide GitHub social preview (1280×640). |
+| `social-preview-<repo>.png` | One per repository, with that repository's address and a panel showing what it does. |
+| `favicon.svg` / `.png` | The small-size cut: at 16–32 px only the thickened tick remains. |
+| `badge-logo.svg` | The logo inside the README badge (below). |
 
-The banner is 1000×320 rather than the 1280×320 it used to be. Taking the
-tagline out left a 443px void between the lockup and the check-run panel —
-six times the outer margins — so the canvas was narrowed to the content
-instead of padding the middle. Keep that in mind before adding anything
-back: the layout is sized to what is in it.
+Upload a social preview per repository under **Settings → Social preview**;
+GitHub has no API for it, so nothing does that for you.
 
-None of these carry a tagline, and new ones should not either. A slogan baked
-into a PNG cannot be reviewed in a diff, cannot be corrected without a machine
-that has Montserrat installed, and goes stale silently — these read
-"Clean commits. Clear standards." for a while after the rest of the org had
-stopped saying it. The wordmark and the domain do not expire; the sentence belongs in the
-prose next to the image, where changing it is a one-line diff.
+## The README badge
 
-Reference the **PNGs** in READMEs, not the SVGs: GitHub proxies README images
-through camo, which handles SVG unreliably — and the SVG text needs Montserrat
-installed to render correctly.
+[![commit-check](https://img.shields.io/badge/commit--check-enabled-2c9ccd?labelColor=0b1620&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2bPHBhdGggZD0iTTIxIDM0TDMwIDQzTDQ3IDIyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzlDQ0QiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2bPGNpcmNsZSBjeD0iMjEiIGN5PSIzNCIgcj0iNyIgZmlsbD0iIzBCMTYyMCIgc3Ryb2tlPSIjMkM5Q0NEIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4K)](https://commit-check.com)
 
-To re-render the banners (needs Montserrat SemiBold installed):
+The `logo=` parameter is `badge-logo.svg`, base64-encoded, with `+` written as
+`%2b` (a bare `+` in a query string is a space). Shields.io only takes a
+Simple Icons slug or a data URI there, which is why the URL is long.
+
+## Re-rendering
+
+The images with text are HTML pages in `src/`, rendered with headless Chrome;
+their fonts come from Google Fonts, so nothing has to be installed. The
+shape-only SVGs are rendered with `rsvg-convert`.
 
 ```bash
-rsvg-convert -w 2000 -h 640 -o banner-light.png banner-light.svg
-rsvg-convert -w 2000 -h 640 -o banner-dark.png banner-dark.svg
-rsvg-convert -w 1280 -h 640 -o social-preview.png social-preview.svg
+branding/src/render.sh
 ```
 
-Different librsvg versions antialias glyph edges slightly differently, so a
-re-render is a whole-image change even when you edited one line. To see what
-you actually changed, render the file before and after with the *same* binary
-and diff those two.
+None of the images carry a tagline, and new ones should not either. A slogan
+baked into a PNG cannot be reviewed in a diff and goes stale silently — v3's
+read "Clean commits. Clear standards." for a while after the rest of the org
+had stopped saying it. The wordmark, the domain and a repository's address do
+not expire; the sentence belongs in the prose next to the image.
+
+Reference the **PNGs** in READMEs, not the SVGs: GitHub proxies README images
+through camo, which handles SVG unreliably, and `logo.svg` keeps its wordmark
+as live text that needs the display face to render as designed.
 
 ## Legacy files
 
 `logo.jpg` and `logo-small.jpg` predate this set and are kept only because
-something outside this repository may still link to them. Neither is fit for
-new use: `logo.jpg` is a PNG wearing a `.jpg` extension, and `logo-small.jpg`
-is a real JPEG, so it has no transparency and renders as a white box on any
-dark background. Remove them once you have confirmed nothing points at them.
+something outside this repository may still link to them; they now carry the
+v4 lockup. `logo.jpg` is a PNG wearing a `.jpg` extension, and
+`logo-small.jpg` is a real JPEG on white. Remove them once you have confirmed
+nothing points at them.

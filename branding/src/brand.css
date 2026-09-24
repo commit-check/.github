@@ -1,0 +1,36 @@
+/* Shared by the HTML sources in this folder. Fonts come from Google Fonts,
+   so rendering needs a network connection but nothing installed. */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500;700&display=block");
+
+:root {
+  --ink: #0b1620;
+  --ink-2: #13212c;
+  --ink-3: #0f1d28;
+  --ink-line: #22323f;
+  --blue: #2c9ccd;
+  --blue-soft: #7fc6e6;
+  --paper: #f4f6f7;
+  --on-ink: #e8eef2;
+  --on-ink-dim: #8fa3b1;
+  --pass: #4fc98b;
+  --fail: #ff7a6e;
+  --display: "Bricolage Grotesque", sans-serif;
+  --text: "Instrument Sans", sans-serif;
+  --mono: "JetBrains Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: transparent; }
+body { font-family: var(--text); -webkit-font-smoothing: antialiased; }
+/* Transcripts must show `==>` as three characters, not a ligature arrow. */
+code, .mono { font-family: var(--mono); font-variant-ligatures: none; }
+
+.lockup { display: flex; align-items: center; }
+.lockup svg { flex-shrink: 0; }
+.wordmark {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  white-space: nowrap;
+}

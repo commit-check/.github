@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="900" viewBox="0 0 340 300">
-  <path d="M22 142 C56 146 86 168 106 204 C130 148 190 84 262 38 C272 32 282 27 289 26 C298 25 302 32 296 40 C240 88 186 156 148 236 C141 253 134 268 127 280 C121 292 108 292 102 280 C86 246 60 204 30 172 C20 162 14 148 22 142 Z" fill="#2c9ccd"></path>
-  <text x="65" y="141" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="46" font-weight="600" letter-spacing="4" fill="#2c9ccd" stroke="#0d1117" stroke-width="9" paint-order="stroke" stroke-linejoin="round">COMMIT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-label="Commit Check">
+  <!-- The lockup for dark backgrounds. The wordmark is live text in
+       Bricolage Grotesque: it renders as designed only where that face is
+       available (a browser online, or the font installed). logo-dark.png is the
+       reference render; use it in READMEs. -->
+  <style>@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&amp;display=block");</style>
+  <rect width="100" height="100" y="14" rx="23.5" fill="#13212C"/>
+  <path d="M32.8 29.6V98.4" stroke="#2C9CCD" stroke-opacity=".4" stroke-width="6.25" stroke-linecap="round"/>
+  <path d="M32.8 67.1L46.9 81.2L73.4 48.4" fill="none" stroke="#2C9CCD" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32.8" cy="67.1" r="10.2" fill="#13212C" stroke="#2C9CCD" stroke-width="6.25"/>
+  <text x="122" y="86" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="64" letter-spacing="-1.6" fill="#FFFFFF">Commit Check</text>
 </svg>
