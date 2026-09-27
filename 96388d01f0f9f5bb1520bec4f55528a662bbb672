@@ -1,0 +1,45 @@
+branding/README.md
+  s_39b40faf32868b::t_cf36ace9feb48a 1,3-15,19-26,28-33,35-43,46,49-57,62-65
+branding/avatar.svg
+  s_39b40faf32868b::t_44d0ec53b12ff8 1-10
+branding/badge-logo.svg
+  s_39b40faf32868b::t_f80ca662ca286d 1
+branding/favicon.svg
+  s_39b40faf32868b::t_a1c90c02c59750 1-6
+branding/logo-dark.svg
+  s_39b40faf32868b::t_55eae3bba66842 1-12
+branding/logo-mark.svg
+  s_39b40faf32868b::t_05ca2d45fd1545 1-7
+branding/logo.svg
+  s_39b40faf32868b::t_b450687a7d2d1c 1-12
+branding/src/banner.html
+  s_39b40faf32868b::t_8a8a8b37c5b402 1-53
+branding/src/brand.css
+  s_39b40faf32868b::t_9be2dbdf7dd45a 1-36
+branding/src/logo.html
+  s_39b40faf32868b::t_873431cd763c5c 1-25
+branding/src/mark.js
+  s_39b40faf32868b::t_63bbb789c243fc 1-10
+branding/src/render.sh
+  s_39b40faf32868b::t_0c635e8fde1690 1-42
+branding/src/social.html
+  s_39b40faf32868b::t_686e38e8c8b6ec 1-116
+profile/README.md
+  s_39b40faf32868b::t_fd880e8e2d6650 4,10,12-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "96388d01f0f9f5bb1520bec4f55528a662bbb672",
+  "prompts": {},
+  "sessions": {
+    "s_39b40faf32868b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f0debcf5-afa4-4c60-b136-cd927a4ddf57",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
