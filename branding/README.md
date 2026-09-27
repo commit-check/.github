@@ -30,11 +30,30 @@ GitHub has no API for it, so nothing does that for you.
 
 ## The README badge
 
-[![commit-check](https://img.shields.io/badge/commit--check-enabled-2c9ccd?labelColor=0b1620&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2bPHBhdGggZD0iTTIxIDM0TDMwIDQzTDQ3IDIyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzlDQ0QiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2bPGNpcmNsZSBjeD0iMjEiIGN5PSIzNCIgcj0iNyIgZmlsbD0iIzBCMTYyMCIgc3Ryb2tlPSIjMkM5Q0NEIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4K)](https://commit-check.com)
+[![commit-check](https://commit-check.com/badge.svg)](https://commit-check.com)
+
+```markdown
+[![commit-check](https://commit-check.com/badge.svg)](https://commit-check.com)
+```
+
+The badge is served from the site:
+[`docs/badge.svg`](https://github.com/commit-check/commit-check.com/blob/main/docs/badge.svg)
+in commit-check.com, a hand copy of the shields.io render below — same size,
+colors and flat style, with `badge-logo.svg` drawn as vectors — so the snippet
+a user copies stays one short line.
+
+The shields.io version is where that geometry comes from, and the one to use
+when you need a different `style=`:
+
+```text
+https://img.shields.io/badge/commit--check-enabled-2c9ccd?labelColor=0b1620&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI%2bPHBhdGggZD0iTTIxIDM0TDMwIDQzTDQ3IDIyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzlDQ0QiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2bPGNpcmNsZSBjeD0iMjEiIGN5PSIzNCIgcj0iNyIgZmlsbD0iIzBCMTYyMCIgc3Ryb2tlPSIjMkM5Q0NEIiBzdHJva2Utd2lkdGg9IjUiLz48L3N2Zz4K
+```
 
 The `logo=` parameter is `badge-logo.svg`, base64-encoded, with `+` written as
 `%2b` (a bare `+` in a query string is a space). Shields.io only takes a
-Simple Icons slug or a data URI there, which is why the URL is long.
+Simple Icons slug or a data URI there, which is why the URL is long. If the
+badge changes, re-render it there and copy the widths, text `x` and
+`textLength` into `docs/badge.svg`.
 
 ## Re-rendering
 
