@@ -7,6 +7,8 @@
   <img src="https://raw.githubusercontent.com/commit-check/.github/main/branding/banner-light.png" alt="Commit Check">
 </picture>
 
+**Commit policy as code for teams and AI agents.**
+
 Catch bad commits before they merge — one config file, from your commit hook to every pull request.
 
 [![PyPI](https://img.shields.io/pypi/v/commit-check?labelColor=0b1620&logo=pypi&logoColor=white&color=2c9ccd)](https://pypi.org/project/commit-check/)
