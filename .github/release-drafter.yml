@@ -5,61 +5,74 @@ tag-template: 'v$RESOLVED_VERSION'
 
 categories:
   - title: 💥 Breaking changes
-    labels:
-      - breaking
+    when:
+      labels:
+        - breaking
   - title: 🚀 Features
-    labels:
-      - feature
-      - enhancement
+    when:
+      labels:
+        - feature
+        - enhancement
   - title: 🐛 Bug fixes
-    labels:
-      - bug
-      - bugfix
-      - fix
-      - regression
+    when:
+      labels:
+        - bug
+        - bugfix
+        - fix
+        - regression
   - title: 📝 Documentation
-    labels:
-      - documentation
+    when:
+      labels:
+        - documentation
   - title: 🚦 Tests
-    labels:
-      - test
-      - tests
+    when:
+      labels:
+        - test
+        - tests
   - title: 👻 Maintenance
-    labels:
-      - chore
-      - internal
-      - maintenance
+    when:
+      labels:
+        - chore
+        - internal
+        - maintenance
   - title: 📦 Dependencies
-    labels:
-      - dependencies
+    when:
+      labels:
+        - dependencies
     collapse-after: 15
   - title: 🗑 Removed
-    labels:
-      - removed
-      - deprecated
+    when:
+      labels:
+        - removed
+        - deprecated
   - title: ✍ Other changes
-
-exclude-labels:
-  - no-changelog
-  - skip-changelog
-  - invalid
-  - duplicate
-  - question
-  - wontfix
+  # Dropped from the release notes before anything else runs
+  - type: pre-exclude
+    when:
+      labels:
+        - no-changelog
+        - skip-changelog
+        - invalid
+        - duplicate
+        - question
+        - wontfix
+  - type: version-resolver
+    semver-increment: major
+    when:
+      label: major
+  - type: version-resolver
+    semver-increment: minor
+    when:
+      label: minor
+  - type: version-resolver
+    semver-increment: patch
+    when:
+      label: patch
+  # Fallback when no version label is present
+  - type: version-resolver
+    semver-increment: patch
 
 change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
-
-version-resolver:
-  major:
-    labels:
-      - major
-  minor:
-    labels:
-      - minor
-  patch:
-    labels:
-      - patch
-  default: patch
 
 template: |
   ## What's Changed
