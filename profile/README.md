@@ -62,7 +62,7 @@ Conventional Branch, and sane subject lengths.
 # .pre-commit-config.yaml — feedback while the message is still being written
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.19.0
+    rev: v2.19.1
     hooks:
       - id: check-message
       - id: check-branch
