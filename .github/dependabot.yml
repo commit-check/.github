@@ -13,11 +13,8 @@ updates:
     commit-message:
       prefix: chore
       include: scope
-    # Explicit labels replace Dependabot's defaults, which include a
-    # major/minor/patch label whenever the repository has one.
     labels:
       - "dependencies"
-      - "github_actions"
     groups:
       github-actions:
         patterns:
