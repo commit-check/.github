@@ -9,6 +9,10 @@ concurrency:
 
 jobs:
   label_pr:
+    # Dependabot labels its own pull requests (dependencies plus the
+    # ecosystem). Its titles start with chore(deps), which would add chore on
+    # top, so leave them alone.
+    if: github.event.pull_request.user.login != 'dependabot[bot]'
     permissions:
       # write permission is required for autolabeler
       pull-requests: write
