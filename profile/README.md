@@ -62,7 +62,7 @@ Conventional Branch, and sane subject lengths.
 # .pre-commit-config.yaml — feedback while the message is still being written
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.13.4
+    rev: v2.19.0
     hooks:
       - id: check-message
       - id: check-branch
@@ -113,7 +113,7 @@ reviewed, diffed, and rolled back like anything else you version.
   [many more](https://github.com/commit-check/commit-check-action/network/dependents)
 - 📖 MIT licensed, actively maintained, and itself following
   [Conventional Commits](https://www.conventionalcommits.org/) and
-  [Conventional Branch](https://conventional-branch.github.io/)
+  [Conventional Branch](https://conventionalbranch.org/)
 
 ## Get involved
 
