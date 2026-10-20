@@ -58,10 +58,10 @@ accepted?"* gets the answer your maintainers actually configured.
 Nothing to configure to begin with: the defaults enforce Conventional Commits,
 Conventional Branch, and sane subject lengths.
 
-On GitHub, the quickest start is the **[Commit Check App](https://github.com/apps/commit-check)**:
-install it on your organization or account, and every push and pull request
-gets a check run, with no workflow file. It is free for public repositories and
-personal accounts.
+On GitHub, the quickest start is the **[Commit Check App](https://github.com/apps/commit-check)**.
+Install it on your organization or account, and every push to a branch and every
+pull request gets a check run, with no workflow file. It is free for public
+repositories and personal accounts.
 
 To run the checks yourself instead:
 
