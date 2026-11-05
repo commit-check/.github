@@ -116,7 +116,8 @@ reviewed, diffed, and rolled back like anything else you version.
 
 - 🔒 **SLSA Level 3 build provenance** — verify any release yourself with
   `gh attestation verify <wheel> --repo commit-check/commit-check`
-- 🏢 Runs in repositories across **Apache**, **Texas Instruments**, **Mila**, and
+- 🏢 Runs in repositories across **Apache**, **FreeBSD**, **Texas Instruments**,
+  **Mila**, and
   [many more](https://github.com/commit-check/commit-check-action/network/dependents)
 - 📖 MIT licensed, actively maintained, and itself following
   [Conventional Commits](https://www.conventionalcommits.org/) and
