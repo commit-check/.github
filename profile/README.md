@@ -24,10 +24,12 @@ Catch bad commits before they merge — one config file, from your commit hook t
 ## What it looks like
 
 ```text
-CC001 message check failed ==> updated the parser
-The commit message should follow Conventional Commits. See https://www.conventionalcommits.org
-Suggest: Use <type>(<scope>): <description>, where <type> is one of: feat, fix, docs, ...
-Docs: https://commit-check.com/rules/#cc001
+✖ Commit rejected by Commit Check · 1 check failed
+
+✖ CC001 message failed: updated the parser
+  The commit message should follow Conventional Commits. See https://www.conventionalcommits.org
+  Suggest: Use <type>(<scope>): <description>, where <type> is one of: feat, fix, docs, style, refactor, test, chore, perf, build, ci
+  Docs:    https://commit-check.com/rules/#cc001
 ```
 
 Every failure names a **stable rule ID**, the value that failed, what to do
@@ -69,7 +71,7 @@ To run the checks yourself instead:
 # .pre-commit-config.yaml — feedback while the message is still being written
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.19.2
+    rev: v2.20.4
     hooks:
       - id: check-message
       - id: check-branch
