@@ -24,10 +24,12 @@ Catch bad commits before they merge — one config file, from your commit hook t
 ## What it looks like
 
 ```text
-CC001 message check failed ==> updated the parser
-The commit message should follow Conventional Commits. See https://www.conventionalcommits.org
-Suggest: Use <type>(<scope>): <description>, where <type> is one of: feat, fix, docs, ...
-Docs: https://commit-check.com/rules/#cc001
+✖ Commit rejected by Commit Check · 1 check failed
+
+✖ CC001 message failed: updated the parser
+  The commit message should follow Conventional Commits. See https://www.conventionalcommits.org
+  Suggest: Use <type>(<scope>): <description>, where <type> is one of: feat, fix, docs, style, refactor, test, chore, perf, build, ci
+  Docs:    https://commit-check.com/rules/#cc001
 ```
 
 Every failure names a **stable rule ID**, the value that failed, what to do
@@ -58,10 +60,10 @@ accepted?"* gets the answer your maintainers actually configured.
 Nothing to configure to begin with: the defaults enforce Conventional Commits,
 Conventional Branch, and sane subject lengths.
 
-On GitHub, the quickest start is the **[Commit Check App](https://github.com/apps/commit-check)**:
-install it on your organization or account, and every push and pull request
-gets a check run, with no workflow file. It is free for public repositories and
-personal accounts.
+On GitHub, the quickest start is the **[Commit Check App](https://github.com/apps/commit-check)**.
+Install it on your organization or account, and every push to a branch and every
+pull request gets a check run, with no workflow file. It is free for public
+repositories and personal accounts.
 
 To run the checks yourself instead:
 
@@ -69,7 +71,7 @@ To run the checks yourself instead:
 # .pre-commit-config.yaml — feedback while the message is still being written
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.19.2
+    rev: v2.20.4
     hooks:
       - id: check-message
       - id: check-branch
@@ -91,7 +93,7 @@ Every rule and option is at **[commit-check.com](https://commit-check.com)**.
 
 | Project | What it is | Use it for |
 | --- | --- | --- |
-| [**Commit Check App**](https://github.com/apps/commit-check) | GitHub App | Org-wide checks with no workflow file, on every push and pull request |
+| [**Commit Check App**](https://github.com/apps/commit-check) | GitHub App | Org-wide checks with no workflow file, on every branch push and pull request |
 | [**commit-check**](https://github.com/commit-check/commit-check) | Python CLI & pre-commit hook | Local checks, CI pipelines, scripting |
 | [**commit-check-action**](https://github.com/commit-check/commit-check-action) | GitHub Action | PR & push validation, job summaries, PR comments |
 | [**commit-check-mcp**](https://github.com/commit-check/commit-check-mcp) | Model Context Protocol server | Letting AI agents validate against your rules |
