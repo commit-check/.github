@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="failed">
+  <!-- The mark without its tile, for one line of a report: failed. -->
+  <path d="M34 22L54 46M54 22L34 46" fill="none" stroke="#E5484D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="19" cy="34" r="7" fill="none" stroke="#E5484D" stroke-width="6"/>
+</svg>

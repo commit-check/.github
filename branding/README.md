@@ -24,6 +24,14 @@ README badge and the social previews, so they read as one project.
 | `social-preview-<repo>.png` | One per repository, with that repository's address and a panel showing what it does. |
 | `favicon.svg` / `.png` | The small-size cut: at 16–32 px only the thickened tick remains. |
 | `badge-logo.svg` | The logo inside the README badge (below). |
+| `status/<state>.png` / `.svg` | The mark in a status colour, for the heading of a report: `passed`, `failed`, `warned`, `skipped`. Shown at 24 px. |
+| `status/line-<state>.png` / `.svg` | The same four without the tile, for one line of a report. Shown at 16 px. |
+
+The status marks keep the Ink tile and the commit on its history line; only
+the verdict changes: a green tick, a red cross, an amber exclamation mark, a
+grey dash. [commit-check-action](https://github.com/commit-check/commit-check-action)
+links to the PNGs on `main` from every job summary and pull request comment,
+so renaming or moving them breaks reports that are already posted.
 
 Upload a social preview per repository under **Settings → Social preview**;
 GitHub has no API for it, so nothing does that for you.

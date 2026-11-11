@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="passed">
+  <!-- The mark without its tile, for one line of a report: passed. -->
+  <path d="M26 34L34 42L52 20" fill="none" stroke="#2DA44E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="19" cy="34" r="7" fill="none" stroke="#2DA44E" stroke-width="6"/>
+</svg>

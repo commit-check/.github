@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="passed with warnings">
+  <!-- The Commit Check mark in a status colour: the commit on its history line, passed with warnings. -->
+  <rect width="64" height="64" rx="15" fill="#0B1620"/>
+  <path d="M21 10V54" stroke="#D29922" stroke-opacity=".4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M41 20V37" fill="none" stroke="#D29922" stroke-width="7" stroke-linecap="round"/><circle cx="41" cy="47" r="4" fill="#D29922"/>
+  <circle cx="21" cy="34" r="6.5" fill="#0B1620" stroke="#D29922" stroke-width="4"/>
+</svg>
