@@ -24,6 +24,12 @@ rsvg-convert -w 1024 -h 1024 "$out/avatar.svg" -o "$out/avatar.png"
 rsvg-convert -w 512 -h 512 "$out/logo-mark.svg" -o "$out/logo-mark.png"
 rsvg-convert -w 256 -h 256 "$out/favicon.svg" -o "$out/favicon.png"
 
+# The status marks the Action's report shows: tiles at 4x of 24 px, line marks at 4x of 16 px.
+for state in passed failed warned skipped; do
+  rsvg-convert -w 96 -h 96 "$out/status/$state.svg" -o "$out/status/$state.png"
+  rsvg-convert -w 64 -h 64 "$out/status/line-$state.svg" -o "$out/status/line-$state.png"
+done
+
 # The lockup, trimmed to its ink with an even margin.
 for theme in light dark; do
   name=logo; [ "$theme" = dark ] && name=logo-dark

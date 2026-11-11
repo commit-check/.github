@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="failed">
+  <!-- The Commit Check mark in a status colour: the commit on its history line, failed. -->
+  <rect width="64" height="64" rx="15" fill="#0B1620"/>
+  <path d="M21 10V54" stroke="#F85149" stroke-opacity=".4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 23L50 45M50 23L32 45" fill="none" stroke="#F85149" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="21" cy="34" r="6.5" fill="#0B1620" stroke="#F85149" stroke-width="4"/>
+</svg>

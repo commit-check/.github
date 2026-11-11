@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="skipped">
+  <!-- The Commit Check mark in a status colour: the commit on its history line, skipped. -->
+  <rect width="64" height="64" rx="15" fill="#0B1620"/>
+  <path d="M21 10V54" stroke="#8B949E" stroke-opacity=".4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 34H50" fill="none" stroke="#8B949E" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="21" cy="34" r="6.5" fill="#0B1620" stroke="#8B949E" stroke-width="4"/>
+</svg>
