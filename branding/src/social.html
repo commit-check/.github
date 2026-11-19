@@ -2,8 +2,8 @@
 <!-- GitHub social preview, 1280x640. social.html?repo=<name> picks the panel;
      no repo gives the org-wide card. The left column is the lockup and an
      address, never a tagline (see ../README.md). The CLI and MCP panels are
-     real output (commit-check 2.18.0); the Action panel follows its report
-     format; the App's commits are sample data. -->
+     real output (CLI: commit-check 2.23.0, MCP: 2.18.0); the Action panel is
+     the head of its PR comment (commit-check-action 2.22.0 and later); the App's commits are sample data. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -40,10 +40,10 @@
   .b { font-weight: 700; }
   .blue { color: var(--blue-soft); }
   .rule { height: 1px; background: var(--ink-line); margin: 12px 0; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-  .chips span { font-size: 15px; line-height: 1; padding: 8px 12px; border-radius: 999px; border: 1px solid #2a3b48; color: var(--on-ink); }
-  .chips span:first-child { background: var(--blue); border-color: var(--blue); color: #06131b; }
   .strike { text-decoration: line-through; text-decoration-color: rgba(255,122,110,.6); }
+  .warn { color: var(--warn, #f2b866); }
+  .head { display: flex; align-items: center; gap: 12px; font-family: var(--text); font-size: 28px; font-weight: 700; color: #fff; line-height: 1.3; padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid var(--ink-line); }
+  .grp { display: flex; align-items: center; gap: 10px; font-family: var(--text); font-size: 20px; line-height: 36px; }
   [data-repo] { display: none; }
 </style>
 </head>
@@ -72,18 +72,18 @@
   <!-- commit-check: the CLI. -->
   <div class="panel mono" data-repo="commit-check">
     <div class="l dim">$ echo "Fix: add login" | commit-check -m</div>
-    <div class="l"><span class="bad b">CC001</span> message check failed ==&gt;</div>
-    <div class="l">Fix: add login</div>
-    <div class="l"><span class="blue">Suggest:</span> Use "<span class="ok b">fix: add login</span>"</div>
-    <div class="l dim">Docs: commit-check.com/rules/#cc001</div>
+    <div class="l"><span class="bad b">✖ CC001</span> <span class="warn">message</span> failed: <span class="bad">Fix: add login</span></div>
+    <div class="l">  <span class="ok b">Suggest:</span> <span class="ok">Use "fix: add login"</span></div>
+    <div class="l dim">  Docs: commit-check.com/rules/#cc001</div>
   </div>
 
   <!-- commit-check-action: the PR comment. -->
   <div class="panel" data-repo="commit-check-action">
     <div class="label">Pull request comment</div>
-    <div style="font-size: 28px; font-weight: 700; color: #fff; line-height: 1.3">Commit Check</div>
-    <div style="font-size: 20px; font-weight: 600; margin-top: 8px"><span class="ok">✔</span> All 5 checks passed</div>
-    <div class="chips mono"><span>pr-comments</span><span>job-summary</span><span>pr-title</span><span>message</span><span>branch</span></div>
+    <div class="head"><img src="../status/passed.svg" width="34" height="34" alt="">Commit Check passed</div>
+    <div class="grp"><img src="../status/line-passed.svg" width="22" height="22" alt="">Pull request: passed</div>
+    <div class="grp"><img src="../status/line-passed.svg" width="22" height="22" alt="">Commits: 3 passed</div>
+    <div class="grp"><img src="../status/line-passed.svg" width="22" height="22" alt="">Branch: passed</div>
   </div>
 
   <!-- commit-check-app: one check run per commit. -->
