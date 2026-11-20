@@ -71,7 +71,7 @@ To run the checks yourself instead:
 # .pre-commit-config.yaml — feedback while the message is still being written
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.23.0
+    rev: v2.23.1
     hooks:
       - id: check-message
       - id: check-branch
